@@ -8,7 +8,6 @@ run:
 	-e MAIN_NODE_IP_ADDRESS=${MAIN_NODE_IP_ADDRESS} \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /captain:/captain caprover/caprover
-	cd ./services/api && make dev
 
 stop:
 	docker swarm leave -f
