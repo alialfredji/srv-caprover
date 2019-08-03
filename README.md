@@ -87,8 +87,8 @@ Stop caprover container: `make stop`
 
 
 Troubleshoots:
-    - You can use env BY_PASS_PROXY_CHECK='TRUE' to skip proxy validation
-    - Provide Public ip to container via env MAIN_NODE_IP_ADDRESS='remote-server-public-ip'
+- You can use env BY_PASS_PROXY_CHECK='TRUE' to skip proxy validation
+- Provide Public ip to container via env MAIN_NODE_IP_ADDRESS='remote-server-public-ip'
 
 ## Connect domain for caprover
 
