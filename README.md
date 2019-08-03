@@ -2,6 +2,7 @@
 ## CAPROVER on EC2
 
 **NOTE:** This service needs a static public ip.
+
 **NOTE:** Enable inbound ports 443 and 80 for all IPs.
 
 ## Install Docker:
