@@ -1,0 +1,31 @@
+version: '3.4'
+services:
+
+#
+# Infrastructure
+# - humble boot services
+# - humble drop services
+#
+
+    caprover:
+        image: caprover/caprover
+        ports:
+            - 80:80
+            - 443:443
+            - 3000:3000
+        networks:
+            - production
+        environment:
+            BY_PASS_PROXY_CHECK: ${BY_PASS_PROXY_CHECK}
+            MAIN_NODE_IP_ADDRESS: ${MAIN_NODE_IP_ADDRESS}
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /captain:/captain
+        restart: always
+
+#
+# Networks definition
+#
+
+networks:
+    production:
