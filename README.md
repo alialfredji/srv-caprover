@@ -1,5 +1,5 @@
 
-## CAPROVER on EC2
+## CAPROVER on remote server. Case is used on Ubuntu
 
 **NOTE:** This service needs a static public ip.
 
@@ -57,10 +57,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ```
 git clone https://github.com/marcopeg/humble-cli.git /home/ubuntu/.humble-cli
+
 sudo ln -s /home/ubuntu/.humble-cli/bin/humble.sh /usr/local/bin/humble
-
-sudo apt-get install make
-
 ```
 
 #### MakeCLI
@@ -103,10 +101,10 @@ Connect route domain from your cdn console
 
 ## Start caprover server setup
 
-´´´
+```
 sudo npm install -g caprover
 
 caprover serversetup
-´´´
+```
 
 OBS! In Question 2 of the `caprover serversetup` you need to pass in Internal IP of remote server
