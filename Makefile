@@ -1,7 +1,6 @@
-
-#
-# DEV
-#
+#!make
+include .env.local
+export $(shell sed 's/=.*//' .env.local)
 
 run:
 	docker run -p 80:80 -p 443:443 -p 3000:3000 \
